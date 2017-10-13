@@ -21,16 +21,16 @@ public class NotEmptyValidatorTest {
 
     @Test
     public void testNotEmptyOnReturnType(){
-        simpleRepository.testNotEmptyOnReturnType("");
+        simpleRepository.testNotEmptyOnReturnType("test");
     }
 
     @Test
     public void testNotEmptyOnParameter(){
-        simpleRepository.testNotEmptyOnParameter("");
+        simpleRepository.testNotEmptyOnParameter("test");
     }
 
     @Test
     public void testNotEmptyOnParameterAndReturnType() {
-        simpleRepository.testNotEmptyOnParameterAndReturnType("");
+        simpleRepository.testNotEmptyOnParameterAndReturnType("test");
     }
 }
