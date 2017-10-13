@@ -10,5 +10,10 @@ import org.springframework.validation.annotation.Validated;
 public interface SimpleRepository {
 
     @NotEmpty
-    String testNotEmpty(@NotEmpty String test);
+    String testNotEmptyOnParameterAndReturnType(@NotEmpty String test);
+
+    @NotEmpty
+    String testNotEmptyOnReturnType(String test);
+
+    String testNotEmptyOnParameter(@NotEmpty String test);
 }

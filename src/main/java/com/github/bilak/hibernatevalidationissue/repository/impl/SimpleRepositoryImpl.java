@@ -8,7 +8,17 @@ import com.github.bilak.hibernatevalidationissue.repository.SimpleRepository;
 public class SimpleRepositoryImpl implements SimpleRepository {
 
     @Override
-    public String testNotEmpty(String test) {
+    public String testNotEmptyOnParameterAndReturnType(String test) {
+        return "test";
+    }
+
+    @Override
+    public String testNotEmptyOnReturnType(String test) {
+        return "test";
+    }
+
+    @Override
+    public String testNotEmptyOnParameter(String test) {
         return "test";
     }
 }

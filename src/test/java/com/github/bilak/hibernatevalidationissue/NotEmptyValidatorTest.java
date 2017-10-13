@@ -18,8 +18,19 @@ public class NotEmptyValidatorTest {
     @Autowired
     private SimpleRepository simpleRepository;
 
+
     @Test
-    public void testThatNotEmptyAnnotationIsSupported() {
-        simpleRepository.testNotEmpty("");
+    public void testNotEmptyOnReturnType(){
+        simpleRepository.testNotEmptyOnReturnType("");
+    }
+
+    @Test
+    public void testNotEmptyOnParameter(){
+        simpleRepository.testNotEmptyOnParameter("");
+    }
+
+    @Test
+    public void testNotEmptyOnParameterAndReturnType() {
+        simpleRepository.testNotEmptyOnParameterAndReturnType("");
     }
 }
